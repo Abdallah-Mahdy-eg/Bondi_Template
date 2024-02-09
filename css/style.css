@@ -1,0 +1,187 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-title p::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+}
+/* Start Navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .icon-search{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+/* End Navbar */
+
+/* Start Header */
+header{
+    height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+/* End Header */
+
+/* Start Features */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--green-color);
+}
+.features h4{
+    color: var(--yellow-color);
+}
+
+/* End features */
+
+/* Start Our Work */
+.work{
+    background-color: var(--section-color);
+}
+.work .nav-pills .nav-link{
+    color: #000;
+}
+.work .nav-pills .nav-link:hover{
+    color: var(--red-color);
+}
+.work .nav-pills .nav-link.active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.work .tab-content .item .box{
+    position: absolute;
+    top: 5px;
+    left: -100%;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1ccc2;
+    transition: 0.4s; 
+}
+.work .tab-content .item:hover .box{
+    left: 5px;
+}
+/* End Our Work */
+
+/* Start Stuff */
+.stuff .description{
+    max-width: 500px;
+}
+/* End Stuff */
+
+/* Start Team */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+/* End Team */
+
+/* Start Project */
+.project{
+    background-color: var(--dark-color);
+}
+/* End Project */
+
+/* Start Subscribe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="email"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+}
+.subscribe input[type="email"]:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: white;
+}
+.subscribe .btn{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* End Subscribe */
+
+/* Start Footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer p .first{
+    color: var(--green-color);
+}
+footer p .last{
+    color: var(--yellow-color);
+}
+footer .icon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+footer .facebook{
+    background-color: #1877f2;
+}
+footer .twitter{
+    background-color: #1da1f2;
+}
+footer .linkedin{
+    background-color: #0077b5;
+}
+footer .youtube{
+    background-color: #ff0000;
+}
+footer .icon i{
+    color: white;
+}
+/* End Footer */
